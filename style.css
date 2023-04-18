@@ -1,0 +1,240 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+body{
+    font-family: 'Hanken Grotesk', sans-serif;
+    box-sizing: border-box;
+}
+a{
+    text-decoration: none;
+    color: #fff;
+    font-size: 10px;
+    opacity: 0.6;
+}
+li{
+    display: inline;
+}
+.container{
+    width: 900px;
+    margin: auto;
+}
+header{
+    background: url(./images/desktop/image-hero.jpg) no-repeat center/cover;
+    position: relative;
+    height: 60vh;
+}
+header::after{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 0;
+    background-color: rgba(0,0,0, 0.6);
+}
+.flex-nav{
+    padding-top: 50px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+    z-index: 1;
+}
+.text{
+    width: 300px;
+    margin-top: 50px;
+    position: relative;
+    z-index: 1;
+    color: #fff;
+    border: 1px #fff solid ;
+    padding: 15px;
+}
+.text h1{
+    font-size: 35px;
+    text-transform: uppercase;
+    font-weight: 200;
+    opacity: 0.8;
+    line-height: 1.3em;
+}
+.left h2{
+    color: #fff;
+}
+.grid{
+    margin-top: 100px;
+    position: relative;
+    height: 55vh;
+}
+.item1{
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    
+}
+.item1 img{
+    width: 600px;
+    height: 55vh;
+
+}
+.item2 h2{
+    padding-top: 40px;
+    padding-bottom: 0px;
+    padding-left: 20px;
+    padding-right: 20px;
+    opacity: 0.7;
+    font-size: 28px;
+    font-weight: 200;
+    text-transform: uppercase;
+    text-align: center;
+}
+.item2 p{
+    opacity: 0.6;
+    font-size: 12px;
+    line-height: 1.6em;
+    padding-top: 20px;
+    padding-left: 30px;
+    padding-right: 30px;
+}
+.item2{
+    background-color: #fff;
+    position: absolute;
+    width: 400px;
+    height: 200px;
+    right: 0;
+    bottom: 0;
+}
+.flex2{
+    margin-top: 50px;
+    display: flex;
+    justify-content: space-between;
+}
+.left2 h2{
+    text-transform: uppercase;
+    font-size: 30px;
+    font-weight: 200;
+    opacity: 0.7;
+}
+button{
+    font-size: 8px;
+    text-transform: uppercase;
+    padding-left: 18px ;
+    padding-right: 18px ;
+    padding-top: 5px ;
+    background: white;
+    padding-bottom: 5px;
+    border: 1px solid black;
+}
+.grid2{
+    margin-top: 50px;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 10px;
+    margin-bottom: 50px;
+}
+.item{
+    position: relative;
+}
+.tp{
+    
+    color: white;
+    opacity: 0.9;
+    position: absolute;
+    bottom: 15px;
+    left: 15%;
+    right: 15%;
+    font-size: 20px;
+    font-weight: 200;
+
+}
+.item img{
+    width: 100%;
+}
+.span{
+    font-size:15px ;
+    font-weight: 800;
+    color: rgb(222, 149, 123);
+}
+footer p{
+    color: #fff;
+    text-align: right;
+}
+footer{
+    background: hsl(0, 0%, 0%);
+    padding-bottom: 20px;
+}
+.foot{
+    padding-top: 30px;
+}
+
+
+@media (max-width:500px){
+    .container{
+        width: 90%;
+        margin: auto;
+    }
+
+   ul{
+        display: none;
+   } 
+
+   header{
+        height: 100vh;
+   }
+
+   .flex-nav{
+        display: block;
+   }
+
+   .text h1{
+    position: relative;
+    z-index: 5; 
+}
+
+   .text{
+        z-index: 1;
+        padding: 20px;
+        height: 30vh;
+        margin:25vh auto;
+        
+        font-size: 40px;
+        position: static;
+   }
+
+   .grid, .item1, .item2{
+        position: static;
+   }
+
+   .item1 img{
+        width: 100%;
+        height: auto;
+   }
+
+   .flex2{
+        display: block;
+   }
+
+   .item2{
+        background-color: #fff;
+        width: 100%;
+    }
+
+    .item2 p{
+        text-align: center;
+        line-height: 2em;
+    }
+
+    .flex2{
+        margin-top: 25vh;
+    }
+
+    .left2 h2{
+        text-align: center;
+    }
+
+    button{
+        display: none;
+    }
+
+   
+}
